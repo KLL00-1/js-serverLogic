@@ -3,7 +3,7 @@ async function getInfo() {
   let responceInfo = await responce.json();
   const body = document.querySelector(".container");
   let i;
-  for (i = 0; responceInfo.length; i++) {
+  for (i = 0; i < responceInfo.length; i++) {
     body.innerHTML += `
   <h2>${responceInfo[i].nickName}</h2>
       <span>${responceInfo[i].publicKey}</span>
